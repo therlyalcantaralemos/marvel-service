@@ -1,0 +1,9 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/marvel-service
+
