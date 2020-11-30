@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 9001
+  servlet:
+    context-path: /marvel
+
+eureka:
+  instance:
+    prefer-id-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+zuul:
+  sensitive-headers: Cookie, Set-Cookie

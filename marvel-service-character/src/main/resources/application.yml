@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: character
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/marvel-character
+
+server:
+  port: 8081
+
+kafka:
+  bootstrapAddress: localhost:9092
+  topic:
+    character-update-events: ${spring.profiles.active:dev}.character-update-events
+    character-remove-events: ${spring.profiles.active:dev}.character-remove-events
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka
+    fetch-registry: true
+    register-witch-eureka: true
+

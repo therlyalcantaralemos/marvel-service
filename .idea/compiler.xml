@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="marvel-service-comic" />
+        <module name="marvel-service-discovery" />
+        <module name="marvel-service-character" />
+        <module name="marvel-service-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="marvel-service (1) (br.com.marvelservice)" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="marvel-service" options="-parameters" />
+      <module name="marvel-service (1) (br.com.marvelservice)" options="-parameters" />
+      <module name="marvel-service-character" options="-parameters" />
+      <module name="marvel-service-comic" options="-parameters" />
+      <module name="marvel-service-discovery" options="-parameters" />
+      <module name="marvel-service-gateway" options="-parameters" />
+    </option>
+  </component>
+</project>
